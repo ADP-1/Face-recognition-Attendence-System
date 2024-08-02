@@ -1,5 +1,6 @@
-## Face recognition Attendence System 
+## Face Recognition Attendance System
 
-# Createed By : Aditya Pandey
-#               Aparna Pandey
-#               Aashish rajput
+### Created By:
+- Aditya Pandey
+- Aparna Pandey
+- Aashish Rajput
