@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import cv2
 
 cap = cv2.VideoCapture(0)
@@ -20,3 +21,6 @@ while True:
 
 cap.release()  # release the capture object
 cv2.destroyAllWindows()  # close all OpenCV windows
+=======
+
+>>>>>>> d7dd0d3d71b82aeb5b74cda4e52f4048b59d8dd3
