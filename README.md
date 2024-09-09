@@ -2,5 +2,4 @@
 
 ### Created By:
 - Aditya Pandey
-- Aparna Pandey
 - Aashish Rajput
