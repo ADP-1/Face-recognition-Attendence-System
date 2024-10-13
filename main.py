@@ -1,23 +1,38 @@
+import os
 import cv2
 
+# Initialize video capture from webcam
 cap = cv2.VideoCapture(0)
-if not cap.isOpened():
-    print("Error: Could not open camera.")
-    exit()
+cap.set(3, 640)  # Set width
+cap.set(4, 480)  # Set height
 
-cap.set(3, 1280)  # width
-cap.set(4, 720)   # height
+# Load background image
+imgBackground = cv2.imread('Resources/background.png')
 
+# Path to the folder containing mode images
+folderModePath = 'Resources/Modes'
+# Get list of mode image paths
+modePathList = os.listdir(folderModePath)
+
+# List to hold mode images
+imgModeList = []
+
+# Load mode images into imgModeList
+for path in modePathList:
+    imgModeList.append(cv2.imread(os.path.join(folderModePath, path)))
+
+# Main loop for capturing video and displaying images
 while True:
     success, img = cap.read()
     if not success:
-        print("Failed to open Webcam")
         break
 
-    cv2.imshow("Webcam", img)
-    if cv2.waitKey(1) & 0xFF == ord('q'):  # press 'q' to exit
-        break
+    # Example of overlaying an image (assuming imgModeList[3] exists)
+    # You may need additional logic for resizing or positioning
+    imgBackground[162:162 + 480, 55:55 + 640] = img
+    imgBackground[44:44 + 633, 808:808 + 414]=imgModeList[0]
 
-cap.release()  # release the capture object
-cv2.destroyAllWindows()  # close all OpenCV windows
+    # Display the background
+    cv2.imshow("Face Attendance", imgBackground)
 
+    cv2.waitKey(1) 
