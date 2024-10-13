@@ -1,5 +1,7 @@
 import os
 import cv2
+import pickle
+
 
 # Initialize video capture from webcam
 cap = cv2.VideoCapture(0)
@@ -20,6 +22,16 @@ imgModeList = []
 # Load mode images into imgModeList
 for path in modePathList:
     imgModeList.append(cv2.imread(os.path.join(folderModePath, path)))
+
+# Load the encoding file
+print("Loading Encode File ...")
+file = open('EncodeFile.p', 'rb')
+encodeListKnownWithIds = pickle.load(file)
+file.close()
+encodeListKnown, studentIds = encodeListKnownWithIds
+# print(studentIds)
+print("Encode File Loaded")
+
 
 # Main loop for capturing video and displaying images
 while True:
