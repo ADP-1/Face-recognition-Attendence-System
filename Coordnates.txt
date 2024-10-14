@@ -1,0 +1,11 @@
+right panel coordinates
+Coordinates: (807, 42)
+Coordinates: (1226, 42)
+Coordinates: (1226, 679)
+Coordinates: (806, 679)
+
+camView Panel coordinates
+# Coordinates: (62, 171)
+# Coordinates: (688, 171)
+# Coordinates: (688, 637)
+# Coordinates: (62, 638)
