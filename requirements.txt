@@ -1,9 +1,0 @@
-numpy
-pillow
-cmake
-dlib
-face-recognition
-cvzone
-opencv-python
-firebase-admin
--e.
