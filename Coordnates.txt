@@ -9,3 +9,9 @@ camera View Panel coordinates
 # Coordinates: (688, 171)
 # Coordinates: (688, 637)
 # Coordinates: (62, 638)
+
+image of person recognised coordinates in mode panel
+Coordinates: (906, 174)
+Coordinates: (1128, 173)
+Coordinates: (1127, 395)
+Coordinates: (905, 395)
