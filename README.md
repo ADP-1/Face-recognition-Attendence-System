@@ -29,12 +29,12 @@ The Face Recognition Attendance System is an advanced, automated solution design
 ## :gear: Technologies Used
 
 - Python 3.x
-- OpenCV (cv2)
-- face_recognition library
-- Firebase Admin SDK
-- NumPy
-- cvzone
-- Threading
+- OpenCV (cv2) for image processing and computer vision tasks
+- face_recognition library for facial recognition algorithms
+- Firebase Admin SDK for database management and cloud storage
+- NumPy for numerical operations on arrays and matrices
+- cvzone for additional computer vision utilities
+- Threading for concurrent execution, improving performance by running multiple tasks simultaneously
 - Pickle for data serialization
 
 ## :rocket: Installation
