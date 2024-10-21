@@ -1,7 +1,5 @@
 # Face Recognition Attendance System
 
-![Project Banner](path/to/banner/image.png)
-
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
