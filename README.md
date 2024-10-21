@@ -10,7 +10,6 @@
 - [Usage](#usage)
 - [Configuration](#configuration)
 - [Database Structure](#database-structure)
-- [Contributing](#contributing)
 - [License](#license)
 - [Acknowledgements](#acknowledgements)
 
@@ -90,16 +89,20 @@ You can configure various aspects of the system by modifying the following files
 ## :file_folder: Database Structure
 
 The Firebase Realtime Database follows this structure:
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+```
+Students
+│
+├── student_id
+│   ├── name
+│   ├── major
+│   ├── starting_year
+│   ├── total_attendance
+│   ├── standing
+│   ├── year
+│   └── last_attendance_time
+│
+└── ...
+```
 
 ## License
 
