@@ -24,18 +24,21 @@ imgList = []
 studentIds = []
 
 for path in pathList:
-    imgList.append(cv2.imread(os.path.join(folderPath, path)))
-    studentIds.append(os.path.splitext(path)[0])
+    img = cv2.imread(os.path.join(folderPath, path))
+    if img is not None:
+        imgList.append(img)
+        studentId = os.path.splitext(path)[0]
+        if studentId not in studentIds:  # Only add the ID if it's not already in the list
+            studentIds.append(studentId)
 
-    fileName = f'{folderPath}/{path}'
-    bucket = storage.bucket()
-    blob = bucket.blob(fileName)
-    blob.upload_from_filename(fileName)
+        fileName = f'{folderPath}/{path}'
+        bucket = storage.bucket()
+        blob = bucket.blob(fileName)
+        blob.upload_from_filename(fileName)
+    else:
+        print(f"Failed to load image: {path}")
 
-
-    # print(path)
-    # print(os.path.splitext(path)[0])
-print(studentIds)
+print("Student IDs:", studentIds)
 
 
 def findEncodings(imagesList):
