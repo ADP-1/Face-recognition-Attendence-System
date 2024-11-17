@@ -87,17 +87,17 @@ graph TB
 ## :camera: Screenshots
 
 ### State 1: Active State - Face Detection
-![alt text](image.png)
+![alt text](Screenshots/image.png)
 *System actively detecting and recognizing faces with green bounding box*
 
 ### State 2: Updating State - Marking Attendance
-#### 1.![alt text](image-4.png)
-#### 2.![alt text](image-2.png)
-#### 3.![alt text](image-1.png)
+#### 1.![alt text](Screenshots/image-4.png)
+#### 2.![alt text](Screenshots/image-2.png)
+#### 3.![alt text](Screenshots/image-1.png)
 
 
 ### State 3: Already Marked State
-![alt text](image-3.png)
+![alt text](Screenshots/image-3.png)
 
 ### System States Overview
 | State | Description |
