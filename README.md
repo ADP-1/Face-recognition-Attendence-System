@@ -28,7 +28,7 @@ The Face Recognition Attendance System is an advanced, automated solution design
 
 ## :gear: Technologies Used
 
-- Python 3.x
+- Python 3.10
 - OpenCV (cv2) for image processing and computer vision tasks
 - face_recognition library for facial recognition algorithms
 - Firebase Admin SDK for database management and cloud storage
@@ -36,6 +36,75 @@ The Face Recognition Attendance System is an advanced, automated solution design
 - cvzone for additional computer vision utilities
 - Threading for concurrent execution, improving performance by running multiple tasks simultaneously
 - Pickle for data serialization
+
+## :art: System Architecture
+
+### System Overview
+```mermaid
+graph TD
+    A[Web Camera] --> B[Face Detection Module]
+    B --> C[Face Recognition Engine]
+    C --> D[Firebase Integration]
+    D --> E[Real-time Database]
+    D --> F[Cloud Storage]
+    B --> G[UI Display Module]
+    G --> H[Attendance Status]
+    G --> I[Student Information]
+```
+
+### Data Flow
+```mermaid
+sequenceDiagram
+    Camera->>Processing: Capture Frame
+    Processing->>Recognition: Detect Face
+    Recognition->>Database: Match Identity
+    Database->>UI: Update Display
+    Database->>Storage: Store Attendance
+```
+
+### Component Interaction
+```mermaid
+graph TB
+    subgraph Frontend
+        A[OpenCV UI]
+        B[Mode Display]
+    end
+    subgraph Processing
+        C[Face Detection]
+        D[Recognition Engine]
+    end
+    subgraph Backend
+        E[Firebase DB]
+        F[Cloud Storage]
+    end
+    A --> C
+    C --> D
+    D --> E
+    E --> B
+```
+
+
+## :camera: Screenshots
+
+### State 1: Active State - Face Detection
+![alt text](image.png)
+*System actively detecting and recognizing faces with green bounding box*
+
+### State 2: Updating State - Marking Attendance
+#### 1.![alt text](image-4.png)
+#### 2.![alt text](image-2.png)
+#### 3.![alt text](image-1.png)
+
+
+### State 3: Already Marked State
+![alt text](image-3.png)
+
+### System States Overview
+| State | Description |
+|-------|-------------|
+| Active | System is actively detecting and recognizing faces |
+| Updating | Attendance is being recorded in the database |
+| Already Marked | Student's attendance has already been recorded |
 
 ## :rocket: Installation
 
@@ -102,6 +171,17 @@ Students
 └── ...
 ```
 
+## :rocket: Future Enhancements
+```mermaid
+mindmap
+    root((Face Recognition))
+        Mobile App Integration
+        Multi-Camera Support
+        Advanced Analytics
+        Automated Reporting
+        Cloud Processing
+```
+
 ## License
 
 No license till now 
@@ -114,4 +194,4 @@ No license till now
 - [cvzone](https://github.com/cvzone/cvzone)
 
 ## Last Updated
-- [21/10/2024]
+- [17/11/2024]
