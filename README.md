@@ -26,16 +26,33 @@ The Face Recognition Attendance System is an advanced, automated solution design
 - Detailed logging and debugging information
 - Support for multiple students with individual profiles
 
-## :gear: Technologies Used
+## 🛠️ Tech Stack
 
-- Python 3.10
-- OpenCV (cv2) for image processing and computer vision tasks
-- face_recognition library for facial recognition algorithms
-- Firebase Admin SDK for database management and cloud storage
-- NumPy for numerical operations on arrays and matrices
-- cvzone for additional computer vision utilities
-- Threading for concurrent execution, improving performance by running multiple tasks simultaneously
-- Pickle for data serialization
+<p align="left">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/opencv/opencv-original.svg" alt="opencv" width="40" height="40"/>
+    <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/numpy/numpy-original.svg" alt="numpy" width="40" height="40"/>
+    <img src="https://www.vectorlogo.zone/logos/canva/canva-icon.svg" alt="canva" width="40" height="40"/>
+    <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/>
+    <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg" alt="github" width="40" height="40"/>
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="40" height="40"/>
+</p>
+
+- **Python 3.10**: Core programming language
+- **OpenCV**: Image processing and computer vision
+- **face_recognition**: Facial recognition algorithms
+- **Firebase Admin SDK**: Database management and cloud storage
+- **NumPy**: Numerical operations on arrays and matrices
+- **cvzone**: Additional computer vision utilities
+- **Threading**: Concurrent execution for improved performance
+- **Pickle**: Data serialization
+- **Canva**: UI design and graphics
+- **Figma**: Interface prototyping and design
+- **Git**: Version control system
+- **GitHub**: Code hosting and collaboration platform
+- **VS Code**: Code editor and development environment
 
 ## :art: System Architecture
 
